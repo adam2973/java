@@ -1,0 +1,45 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_blaszkowski()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<img src="obraz1.gif" />
+ 
+<h2><b>Uwagi na temat JS</b></h2>
+<ol>
+	<li>kiedy powstała - powstal w 1995roku</li>
+	<li>dlaczego jest to język skryptowy - nie musi zostac skompilowany do kodu maszynowego aby mozna blo zobaczyc efekty jego dzialania</li>
+	<li>gdzie jest wykonywany JS (klient lub serwer) JavaScript jest specyficznym językiem – 
+        wykonywać go można po stronie serwera (server-side) oraz po stronie przeglądarki (client-side)</li>
+	<li>dlaczego jest to bezpieczne narzędzie jest bezpieczny, gdy projekty w nim budowane są traktowane z odpowiednią dbałością i
+	zastosowaniem najlepszych praktyk.</li>
+	<li>czy jest to język obiektowy, jeśli tak to dlaczegoJava to obiektowy język programowania, a JavaScript to obiektowy język skryptowy. 
+	Aplikacje w języku Java działają w maszynie wirtualnej lub w przeglądarce,
+        a kod JavaScript jest uruchamiany wyłącznie w przeglądarkach. Kod języka Java wymaga skompilowania, a kod JavaScript pozostaje w formie tekstu.</li>
+</ol>
+ 
+<p> &lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')" &rsaquo;<p/>
+	to jest przycisk który tworzy po kliknieciu nowe okno 
+	
+	<p> &lsaquo;window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200") &rsaquo;<p/> 
+	                        <p>  otwiera nowe okno przeglądarki z ukrytym: menu przeglądarki ,przyciskami ,narzędzi, katalogów . okno przez to polecenie ma wymiary wysokość 280 px  szerokość 160 px, jest oddalone górnej,lewej krawędzi ekranu o 200 px  .<p/>
+	             
+	        <li>toolbar=no  : pokazuje lub ukrywa standardowy pasek narzędzi<li/>
+                    directories=no, pokazuje lub ukrywa przyciski katalogów
+                   <li>menubar=no,  pokazuje lub ukrywa menu przeglądarki<li/>
+                   height=280, ustawia wysokość okna
+                   <li> width=160,  ustawia szerokość okna<li/>
+                    top=200,    ustawia położenie okna względem góry ekranu
+                    <li>left=200    ustawia położenie okna względem lewej strony ekranu
+		             <li>window.open, - otwarcie nowego okna
+                       <li>window.close, zamknięcie okna
+
+  
+<p> <input type="button" value="zamknij okno" onclick="okno_zamknij_blaszkowski()"/> <p/>
+</body>
+</html>
