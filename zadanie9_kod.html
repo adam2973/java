@@ -8,31 +8,31 @@ window.close()
 </script>
 	</head>
 <body>
-  <textarea rows="40" cols="80">
-	<html>
-<body>  	  
-<div style="color:green;font-size:53px;">
- <script language="JavaScript">
-var liczba1=prompt("Podaj pierwszą datę ze stycznia","");
-var liczba2=prompt("Podaj godzinę do pierwszej daty","");
-var liczba3=prompt("Podaj drugą datę ze stycznia","");
-var liczba4=prompt("Podaj godzinę do drugiej daty","");
-var suma;
- var d1_bla=parseFloat(liczba1);
- var g1_bla=parseFloat(liczba2);
- var d2_bla=parseFloat(liczba3);
- var g2_bla=parseFloat(liczba4);
- suma=(d1_bla-d2_bla)*24*60*60;
- suma2=suma-((24-g1_bla)*60*60)+((24-g2_bla)*60*60);
-   document.write("D1= "+d1_bla+"<br>");
-   document.write("G1= "+g1_bla+"<br>");
-   document.write("D2= "+d2_bla+"<br>");
-   document.write("G2= "+g2_bla+"<br>");
- document.write("Ilość sekund między tymi dwoma dniami: "+suma2+" sekund<br>");
- </script>
+		
+	<div style="color:red;font-size:50px;">
+		
+ 	<script language="JavaScript">
+		
+		
+	var liczba1=prompt("Podaj pierwszą datę ze stycznia","");
+		var liczba2=prompt("Podaj godzinę do pierwszej daty","");
+		var liczba3=prompt("Podaj drugą datę ze stycznia","");
+		var liczba4=prompt("Podaj godzinę do drugiej daty","");
+		var suma;
+		 var d1_bla=parseFloat(liczba1);
+		 var g1_bla=parseFloat(liczba2);
+		 var d2_bla=parseFloat(liczba3);
+		 var g2_bla=parseFloat(liczba4);
+		 suma=(d1_bla-d2_bla)*24*60*60;
+		 suma2=suma-((24-g1_bla)*60*60)+((24-g2_bla)*60*60);
+		   document.write("D1= "+d1_bla+"<br>");
+		   document.write("G1= "+g1_bla+"<br>");
+		   document.write("D2= "+d2_bla+"<br>");
+		   document.write("G2= "+g2_bla+"<br>");
+		 document.write("Ilość sekund : "+suma2+" sekund<br>");
+		 </script>
 </div>
-	</html>
-</body>
    <input type="button" value="zamknij okno" onclick="okno_zamknij_blaszkowski()"/>
 </body>
 </html>
+
