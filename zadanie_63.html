@@ -1,16 +1,29 @@
 <html>
-  <body>
-      <div style="color:red;font-size:50px;">
-        <script language="JavaScript">
-        var x=prompt("podaj liczbę x=","");
-          var a=parseFloat(x);
-        document.write("czytana liczba x="+a+"<br>");
-          if(a>0)
-          {document.write("czytana liczba jest większa od 0"+"<br>");}
-          
-// Dokończ dwa pozostałe przypadki a==0 i a<0
-// polskie litery mają działać(uzupełnij w kodzie strony)
+  <html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Zadanie 63</title>
+ <script language="JavaScript">
+function V(i){
+var i;
+if(i==1 || i.toLowerCase()=='czerwony')
+{
+document.write("<font size=7, color=red>Wybrałeś kolor czerwony</font><br>");
+}
+if(i==2 || i.toLowerCase()=='niebieski')
+{
+document.write("<font size=1, color=blue>Wybrałeś kolor niebieski</font><br>");
+}}
 </script>
-</div>
+</head>
+<body>
+<font size=6, color=green>Menu </font><br>
+<font size=6, color=red>1 - Czerwony </font><br>
+<font size=6, color=blue>2 - Niebieski </font><br>
+<form name="formularz" action="..." onsubmit="V(this.kolor.value);return false">
+<input size="6" name="kolor">
+ <input TYPE="submit" Value="Sprawdz" >
+ </form>
 </body>
 </html>
+ 
