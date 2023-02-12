@@ -1,35 +1,37 @@
-
+<!DOCTYPE html>
 <html>
-          <html lang="pl">
-            <head>
-         <meta charset="utf-8">
-
-  <script>
-        var imie=prompt("Podaj liczbę liter imienia", "");
-        var b_bla=imie
-        var nazwisko=prompt("Podaj liczbę liter nazwiska", "");
-        var a_bla=nazwisko
-          document.write("Liczba liter imienia="+b_bla+"<br>");
-          document.write("Liczba liter nazwiska="+a_bla+"<br>");
-          var b=b_bla%4+5;
-          var a=a_bla%6+20;
-          for (var i=1; i<=b; i++)
-            {
-            document.write("*");
-          }
-           document.write("<br>");
-           for (var i=1; i<=b-2; i++)
-          {
-            document.write("*&nbsp"); }
-                       document.write("*");
-        for (var i=1; i<=b; i++)
-      {
-        document.write("*");
-      }
-    </script>
-              
-  </head>
-  
-   <body>
-     </body>
+    <head>
+        <title>zadanie 73</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+                      var a_bla=prompt("Podaj Nazwisko");
+                      var b_bla=prompt("Podaj Imię");
+                      a_bla=(a_bla.length%4)+5;
+                      b_bla=(b_bla.length%6)+20;
+                      for(let i = 0;i<a_bla;i++)
+                      {
+                          if(i==0 || i==(a_bla-1))
+                          {
+                              for(let j = 0;j<b_bla;j++)
+                              {
+                                  document.write("*");
+                              }
+                              document.write("<br>");
+                          }
+                          else
+                          {
+                              document.write("*");
+                              for(let j = 2;j<b_bla;j++)
+                              {
+                                  document.write("&nbsp&nbsp")
+                              }
+                              document.write("*");
+                              document.write("<br>");
+                }
+            }
+        </script>
+    </body>
 </html>
+
