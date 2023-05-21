@@ -1,1 +1,34 @@
-
+ <textarea rows="80" cols="80">
+<html lang="pl">
+<head>
+<title> blaszkowski</title>
+<script>
+function przycisk1_blaszkowski()
+{
+pokaz1.innerHTML="Ostatnio zmodyfikowany : "+document.lastModified;
+}
+function przycisk2_blaszkowski()
+{
+dzis = new Date();
+pokaz2.innerHTML="Aktualna data : "+dzis.getDate()+","+(dzis.getMonth()+1) +","+dzis.getFullYear();
+}
+function przycisk3_blaszkowski()
+{
+dzis_bla = new Date();
+pokaz3.innerHTML="Aktualny czas : "+dzis_bla.getHours()+":"+dzis_bla.getMinutes();
+}
+</script>
+</head>
+<body>
+<form>
+<a onclick="przycisk1_blaszkowski(' ')"><img src="a1.png" alt="Przycisk1" border="0" onmouseover="this.src = '111.png'" onmouseout="this.src ='a1.png'" /></a>
+<a onclick="przycisk2_blaszkowski(' ')"><img src="b2.png" alt="Przycisk2" border="0" onmouseover="this.src = '222.png'" onmouseout="this.src ='b2.png'" /></a>
+<a onclick="przycisk3_blaszkowski(' ')"><img src="c3.png" alt="Przycisk3" border="0" onmouseover="this.src = '333.png'" onmouseout="this.src ='c3.png'" /></a>
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+<tr id="pokaz3"></tr>
+</table>
+</body>
+</html>
