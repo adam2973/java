@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> blaszkowski</title>
+<script>
+function blaszkowski_start()
+{
+start_bla = new Date();
+poczatek_bla=start_bla.getTime()
+}
+function blaszkowski_stop()
+{
+stop_bla = new Date();
+koniec_bla=stop_bla.getTime()
+roznica_bla=koniec_bla-poczatek_bla;
+pokaz1.innerHTML=roznica_bla/1000+" s";
+}
+</script>
+</head>
+<body>
+<script>
+dzis_bla = new Date();
+document.write("<br>Aktualny czas : ",dzis_bla.getHours(),":",dzis_bla.getMinutes());
+</script>
+<br>
+<input type="button" name="Button1" value="START stoper" onclick="blaszkowski_start()">
+<input type="button" name="Button2" value="STOP stoper" onclick="blaszkowski_stop()">
+<br>
+<table border=5>
+<tr id="pokaz1"></tr>
+</table>
+</body>
+</html>
